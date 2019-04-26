@@ -1,13 +1,10 @@
 package be.avidoo.postgresql.inmemorydatabase.repository;
 
+import be.avidoo.postgresql.inmemorydatabase.AbstractAcceptanceTest;
 import be.avidoo.postgresql.inmemorydatabase.model.Person;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -17,10 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@ActiveProfiles("test")
-public class PersonRepositoryTest {
+public class PersonRepositoryTest extends AbstractAcceptanceTest {
 
     @Autowired
     ApplicationContext applicationContext;
