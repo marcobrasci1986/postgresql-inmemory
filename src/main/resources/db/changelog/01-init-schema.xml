@@ -8,7 +8,7 @@
     <preConditions>
         <or>
             <runningAs username="sa"/>
-            <runningAs username="test"/>
+            <runningAs username="postgres"/>
         </or>
     </preConditions>
 
